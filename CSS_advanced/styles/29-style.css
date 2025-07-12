@@ -1,7 +1,8 @@
 /* 1. Nouvelle variable */
 :root {
-    --section-tagline-margin: 0;
+    --nav-item-link-hover: var(--color-white);
 }
+
 
 /* 2. Mise à jour de section-tagline */
 .section-tagline {
