@@ -1,8 +1,7 @@
 /* 1. Nouvelle variable */
 :root {
-    --nav-item-link-hover: var(--color-white);
+    --section-tagline-margin: 0;
 }
-
 
 /* 2. Mise à jour de section-tagline */
 .section-tagline {
@@ -209,6 +208,7 @@ ul.row {
 :root {
     --nav-item-link-hover: var(--color-white);
 }
+
 
 /* Style du pseudo-élément ::before des liens de navigation */
 .nav .nav-link::before {
