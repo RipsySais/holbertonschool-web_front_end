@@ -6,18 +6,21 @@
 }
 
 :root {
-    /* [Toutes vos variables existantes restent inchangées] */
+    /* [Toutes les variables précédentes inchangées] */
+    
+    /* Variables spécifiques à la navbar */
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.064rem; /* 4% de 1.6rem (font-size-medium) */
+    --nav-item-letter-spacing: 0.064rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 4.8rem 0; /* 3 x 1.6rem */
+    --nav-item-margin: 0 0 4.8rem 0;
     --nav-item-link-hover: var(--color-primary);
 }
 
-/* [Tous vos styles existants restent inchangés jusqu'à .nav] */
+/* [Tous les styles précédents inchangés jusqu'à la navbar] */
 
+/* Navbar Styles */
 .navbar-menu {
     float: right;
 }
@@ -40,7 +43,7 @@
 
 .nav .nav-link {
     display: block;
-    padding: 0.8rem 1.6rem; /* 1.6rem/2 et 1.6rem */
+    padding: 0.8rem 1.6rem;
 }
 
 .nav .nav-link:hover {
