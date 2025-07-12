@@ -1,0 +1,98 @@
+/* 1. Nouvelle variable */
+:root {
+    --section-tagline-margin: 0;
+}
+
+/* 2. Mise à jour de section-tagline */
+.section-tagline {
+    margin: var(--section-tagline-margin);
+}
+
+/* 3. ul.row sans styles par défaut */
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 4. Colonne 1/3 */
+.col-1-3 {
+    width: 33.33%;
+}
+
+/* 5. Colonne 1/2 */
+.col-1-2 {
+    width: 50%;
+}
+
+/* 6. Footer copyright */
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+/* 7. Alignement des ul dans le footer */
+.footer ul {
+    text-align: right;
+}
+
+/* Clear fix after each .row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Common column styling for all col-* classes */
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Thème sombre : texte et titres en blanc, fond en noir */
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+/* Thème sombre : texte et titres en blanc, fond en noir */
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+/* Texte du footer en blanc dans le thème sombre */
+.footer-address {
+    color: var(--text-color);
+}
+
+/* Liens sociaux en bloc et icônes SVG en blanc */
+.social-link {
+    display: block;
+}
+
+.social-link > svg {
+    fill: var(--text-color);
+}
+
+/* Titre des cartes de services : aucun margin */
+.card-services .card-title {
+    margin: 0;
+}
+
+/* Liens dans les cartes de services : bloc, fond gris clair, padding */
+.card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+/* Hover des liens dans les cartes de services */
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
