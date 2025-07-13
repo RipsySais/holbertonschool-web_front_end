@@ -58,36 +58,61 @@ body {
     line-height: var(--line-height-base);
 }
 
-/* [Tous les autres styles existants...] */
+/* [Tous les styles précédents inchangés...] */
 
-/* Testimonial Quote Styles */
-.card-testimonial .card-quote {
+/* Header Styles */
+.header {
     position: relative;
+    padding: var(--section-padding);
+    text-align: var(--section-header-align);
 }
 
-.card-testimonial .card-quote::before {
-    content: "\201C"; /* Guillemet ouvrant */
+.header-logo {
     position: absolute;
-    top: -4.5rem;
-    left: -1rem;
-    color: #efeded;
-    font-size: 10rem;
-    z-index: -1;
-    font-family: Georgia, serif; /* Pour un rendu plus élégant */
-    line-height: 1; /* Évite l'espace supplémentaire */
+    top: 0;
+    left: 0;
 }
 
-/* Styles existants pour les cartes */
-.card-work .card-outer {
-    position: relative;
-    overflow: hidden;
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card-work .card-image img {
-    height: 30rem;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+.header-nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* [Tous les autres styles existants...] */
+.header-nav-item {
+    margin: 0 1rem;
+}
+
+.header-nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    transition: color 0.3s ease;
+}
+
+.header-nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+    }
+    
+    .header-nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-nav-item {
+        margin: 0.5rem 0;
+    }
+}
